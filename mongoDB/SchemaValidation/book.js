@@ -42,15 +42,15 @@ Book.findByIdAndUpdate('664c97285d9fcfee25aee15e',{price:-878},{runValidators:tr
     console.log(error.errors.price.properties.message);
 })
 
-// const book1 = new Book({
-//     title:"Gone girl",
-//     author:"RD sharma",
-//     price:667,
-//     category:"fiction",
-//     genre:["comics","Superheros","fiction"]
-// });
-// book1.save().then((data)=>{
-//     console.log(data);
-// }).catch((error)=>{
-//     console.log(error);
-// })
+const book1 = new Book({
+    title:"Gone girl",
+    author:"RD sharma",
+    price:667,
+    category:"fiction",
+    genre:["comics","Superheros","fiction"]
+});
+book1.save().then((data)=>{
+    console.log(data);
+}).catch((error)=>{
+    console.log(error);
+})
