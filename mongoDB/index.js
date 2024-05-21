@@ -22,39 +22,39 @@ const userSchema = new mongoose.Schema({
 const User = mongoose.model("User",userSchema);
 
 //find data
-// User.find({name:"nik"}).then((data)=>{
-//   console.log(data);
-// }).catch((error)=>{
-//   console.log(error);
-// });
+User.find({name:"nik"}).then((data)=>{
+  console.log(data);
+}).catch((error)=>{
+  console.log(error);
+});
 
-// User.findByIdAndDelete("664c41955d2568ef57ac6b6c").then((data)=>{
-//   console.log(data);
-// }).catch((error)=>{
-//   console.log(error);
-// });
+User.findByIdAndDelete("664c41955d2568ef57ac6b6c").then((data)=>{
+  console.log(data);
+}).catch((error)=>{
+  console.log(error);
+});
 
 
 //update data
 
-// User.updateOne({name:"nik"},{name:"nikeeta"}).then((data)=>{
-//   console.log(data);
-// }).catch((error)=>{
-//   console.log(error);
-// })
+User.updateOne({name:"nik"},{name:"nikeeta"}).then((data)=>{
+  console.log(data);
+}).catch((error)=>{
+  console.log(error);
+})
 
-// User.findOneAndUpdate({_id:"664c41955d2568ef57ac6b6d"},{age:4000},{new:true}).then((data)=>{
-//   console.log(data);
-// }).catch((error)=>{
-//   console.log(error);
-// })
+User.findOneAndUpdate({_id:"664c41955d2568ef57ac6b6d"},{age:4000},{new:true}).then((data)=>{
+  console.log(data);
+}).catch((error)=>{
+  console.log(error);
+})
 
 
-// User.findByIdAndUpdate({_id:"664c41955d2568ef57ac6b6d"},{age:4000}).then((data)=>{
-//   console.log(data);
-// }).catch((error)=>{
-//   console.log(error);
-// })
+User.findByIdAndUpdate({_id:"664c41955d2568ef57ac6b6d"},{age:4000}).then((data)=>{
+  console.log(data);
+}).catch((error)=>{
+  console.log(error);
+})
 
 //delete data
 User.findByIdAndDelete('664c41955d2568ef57ac6b6a').then((data)=>{
@@ -65,28 +65,28 @@ User.findByIdAndDelete('664c41955d2568ef57ac6b6a').then((data)=>{
 
 
 //insert one data in DB 
-// const user2 = new User({
-//   name:"nik",
-//   email:"abc@gail.com",
-//   age:45
-// });
-// user2.save().then((result)=>{
-// console.log(result,"save data");
-// }).catch((err)=>{
-//   console.log(err);
-// });
+const user2 = new User({
+  name:"nik",
+  email:"abc@gail.com",
+  age:45
+});
+user2.save().then((result)=>{
+console.log(result,"save data");
+}).catch((err)=>{
+  console.log(err);
+});
 
 //insert multiple data.
-// User.insertMany([
-//   {name:"sakshi",email:"sakshi@gamil.com",age:56},
-//   {name:"sneha",email:"sneha@gamil.com",age:67},
-//   {name:"netra",email:"netra@gamil.com",age:90},
-//   {name:"zinat",email:"zinat@gamil.com",age:78},
-//   {name:"vaishnavi",email:"vashuu@gamil.com",age:876},
-// ]).then((result)=>{
-//   console.log(result);
-// }).catch((error)=>
-// {
-//   console.log(error);
-// });
+User.insertMany([
+  {name:"sakshi",email:"sakshi@gamil.com",age:56},
+  {name:"sneha",email:"sneha@gamil.com",age:67},
+  {name:"netra",email:"netra@gamil.com",age:90},
+  {name:"zinat",email:"zinat@gamil.com",age:78},
+  {name:"vaishnavi",email:"vashuu@gamil.com",age:876},
+]).then((result)=>{
+  console.log(result);
+}).catch((error)=>
+{
+  console.log(error);
+});
 
